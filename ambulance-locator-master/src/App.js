@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import AmbulanceList from "./components/AmbulanceList";
 import "./App.css";
+import Footera from "./components/Footera";
 
 const App = () => {
   const [location, setLocation] = useState("");
@@ -63,17 +64,23 @@ const App = () => {
 
   return (
     <div>
-      <h1>Ambulance Locator</h1>
-      <form onSubmit={handleLocationSubmit}>
-        <input
-          type="text"
-          placeholder="Enter your location"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
-        />
-        <button type="submit">Find Ambulances</button>
-      </form>
-      {showAmbulances && <AmbulanceList ambulances={ambulances} />}
+      <div className="k">
+        <h1>Ambulance Locator</h1>
+        <h3>Rapid Response, Life in Every Second!</h3>
+        <form onSubmit={handleLocationSubmit}>
+          <input
+            type="text"
+            placeholder="Enter your location"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+          />
+          <button type="submit">Find Ambulances</button>
+        </form>
+        {showAmbulances && <AmbulanceList ambulances={ambulances} />}
+      </div>
+      <div>
+        <Footera />
+      </div>
     </div>
   );
 };

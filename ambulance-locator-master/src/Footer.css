@@ -1,0 +1,75 @@
+.footer {
+  background-color: #1e3a8a;  /* blue-900 */
+  color: white;
+  border: 2px white;
+  margin-top: 10px;
+  border-radius: 20px !important;
+  align-items: center;
+}
+
+.emergency-banner {
+  background-color: #dc2626;  /* red-600 */
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.emergency-text {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+}
+
+.quick-links a:hover {
+  color: #93c5fd;  /* blue-300 */
+}
+
+.hours-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.copyright {
+  border-top: 1px solid #374151;  /* gray-700 */
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+/* Media query for responsive design */
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+  }
+}
