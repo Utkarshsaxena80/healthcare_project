@@ -1,0 +1,64 @@
+/* src/App.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+form{
+    
+    background-image: url("../amn.jpg");
+    background-size: cover;       /* Scales the image to cover the entire container */
+    background-repeat: no-repeat; /* Ensures the image appears only once */
+    background-position: center;
+    border-radius: 15px;  
+    overflow: hidden;     
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+button {
+    font-size: medium;
+    width:200px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input{
+    font-size: medium;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    color: black;
+    border: 3px black solid;
+    border-radius: 100px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
