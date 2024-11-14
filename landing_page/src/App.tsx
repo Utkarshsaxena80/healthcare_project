@@ -37,6 +37,13 @@ function App() {
           <div onClick={() => console.log("clicked")}>
             <ServiceCard
               Icon={PackageSearch}
+              title="Search Hospitals"
+              description="Find hospitals based on your needs on the go"
+            />
+          </div>
+          <div onClick={() => console.log("clicked")}>
+            <ServiceCard
+              Icon={PackageSearch}
               title="Inventory Management"
               description="Track and manage medical supplies and equipment efficiently"
             />
